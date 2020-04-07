@@ -45,6 +45,10 @@ public class Game {
         }
         System.out.println("\n");
     }
+    public void showWinnerLog(){
+        if(winner == null) System.out.println("Конец игры. Ничья.");
+        else  System.out.println("Конец игры. \nПоздравляем победителя!!!!!!   **** " + winner+ " ****");
+    }
 
     public void winnerCheck() {
         // Проверяем строки и столбцы

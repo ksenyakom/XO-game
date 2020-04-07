@@ -14,8 +14,7 @@ public class Main {
             input.inputMove();
             if (game.playerMove(input.i, input.j)) game.showField();
             game.winnerCheck();
-            if (game.endGame)  System.out.println("Конец игры. \nПоздравляем победителя!!!!!!   **** " + game.winner+ " ****");
-
+            if (game.endGame)  game.showWinnerLog();
         }
 
     }
